@@ -8,11 +8,4 @@ pipeline {
             }
         }
     }
-        stage('Build Docker Image') {
-            steps {
-                script {
-                    docker.build('terratest:latest')
-                }
-            }
-        }
 }
