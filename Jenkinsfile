@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('SCM Checkout') {
+        stage('Checkout') {
             steps {
                 git 'https://github.com/gruntwork-io/terratest.git'
             }
